@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 /**
  * 按需异步加载模块
  * @param {*} importComponent 
