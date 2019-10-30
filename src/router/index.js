@@ -38,4 +38,4 @@ class mobileConfig extends Component {
     )
   }
 }
-export default isMobile ? mobileConfig : pcConfig;
+export default isMobile() ? mobileConfig : pcConfig;

@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-// import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { saveToken } from '@/store/forum/action'
-class Index extends Component{
+class Login extends Component{
     state = {
         data: []
     }
@@ -22,4 +21,4 @@ export default connect(state => ({
     proData: state.data,
 }), {
 saveToken
-})(index);
+})(Login);

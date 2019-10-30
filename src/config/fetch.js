@@ -6,7 +6,7 @@ export default async(url = '', data = {}, type = 'GET', method = 'fetch') => {
 	type = type.toUpperCase();
 	url = baseUrl + url;
 
-	if (type == 'GET') {
+	if (type === 'GET') {
 		let dataStr = ''; //数据拼接字符串
 		Object.keys(data).forEach(key => {
 			dataStr += key + '=' + data[key] + '&';
@@ -18,7 +18,7 @@ export default async(url = '', data = {}, type = 'GET', method = 'fetch') => {
 		}
 	}
 
-	if (window.fetch && method == 'fetch') {
+	if (window.fetch && method === 'fetch') {
 		let requestConfig = {
 			credentials: 'include',
 			method: type,
@@ -30,7 +30,7 @@ export default async(url = '', data = {}, type = 'GET', method = 'fetch') => {
 			cache: "force-cache"
 		}
 
-		if (type == 'POST') {
+		if (type === 'POST') {
 			Object.defineProperty(requestConfig, 'body', {
 				value: JSON.stringify(data)
 			})
@@ -50,11 +50,11 @@ export default async(url = '', data = {}, type = 'GET', method = 'fetch') => {
 			if (window.XMLHttpRequest) {
 				requestObj = new XMLHttpRequest();
 			} else {
-				requestObj = new ActiveXObject;
+				// requestObj = new ActiveXObject;
 			}
 
 			let sendData = '';
-			if (type == 'POST') {
+			if (type === 'POST') {
 				sendData = JSON.stringify(data);
 			}
 
@@ -63,8 +63,8 @@ export default async(url = '', data = {}, type = 'GET', method = 'fetch') => {
 			requestObj.send(sendData);
 
 			requestObj.onreadystatechange = () => {
-				if (requestObj.readyState == 4) {
-					if (requestObj.status == 200) {
+				if (requestObj.readyState === 4) {
+					if (requestObj.status === 200) {
 						let obj = requestObj.response
 						
 						if (typeof obj !== 'object') {

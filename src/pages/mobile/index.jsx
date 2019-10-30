@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-// import PropTypes from 'prop-types'
+
 import { connect } from 'react-redux';
 import { saveToken } from '@/store/forum/action';
+import './index.css'
 class Index extends Component{
     state = {
         data: []
@@ -10,9 +11,10 @@ class Index extends Component{
     render() {
         return(
             <main>
-                <h1>mobile主页
-                    <span>mobile主页</span>
-                </h1>
+                <p className='h'>热门分类
+                </p>
+                <input type="text" />
+                <input type="password"/>
             </main>
         )
     }
@@ -22,4 +24,4 @@ export default connect(state => ({
     proData: state.data,
 }), {
 saveToken
-})(index);
+})(Index);
