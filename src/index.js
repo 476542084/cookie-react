@@ -10,6 +10,9 @@ import * as serviceWorker from './serviceWorker'
 import * as rem from './config/rem'
 import '@/style/base.css'
 
+//mock数据
+// import '@/mock/mock'
+
 if (isMobile()) {
     rem.rem();
     if ('addEventListener' in document) {
