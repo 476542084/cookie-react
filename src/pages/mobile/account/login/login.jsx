@@ -9,9 +9,7 @@ class Login extends Component{
     render() {
         return(
             <main>
-                <h1>mobile注册
-                    <span>mobile注册</span>
-                </h1>
+               
             </main>
         )
     }

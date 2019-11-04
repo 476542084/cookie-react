@@ -10,9 +10,7 @@ class Login extends Component{
     render() {
         return(
             <main>
-                <h1>pc注册
-                    <span>pc注册</span>
-                </h1>
+               
             </main>
         )
     }
