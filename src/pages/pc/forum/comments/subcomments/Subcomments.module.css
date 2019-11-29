@@ -1,0 +1,159 @@
+.subcomments_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 73px);
+    margin-left: 73px;
+    padding: 20px 40px 20px 20px;
+    background: #F7F7F7;
+}
+
+.subcomment_item {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.subcomment_item:not(:first-child) {
+    margin-top: 40px;
+}
+
+.subcomment_profile_img_holder {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.profile_img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile_verif_img {
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+
+.subcomment_author {
+    font-size: 14px;
+    color: #DB5675;
+}
+
+.subcomment_content > p {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.subcomment_likes_row {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 6px;
+    right: 2px;
+}
+
+.subcomment_likes_row > a {
+    display: block;
+}
+
+.subcomment_likes_row > a:not(:last-child) {
+    margin-right: 30px;
+}
+
+.subcomment_likes_row > button:not(:last-child) {
+    margin-right: 30px;
+}
+
+.remove_subcomment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 53px; */
+}
+
+.comment_delete_icon {
+    display: inline-block;
+    height: 14px;
+    width: 15px;
+    margin-right: 9px;
+    /* background-image: url("../../default_files/forum/delete.png"); */
+    background-size: 15px 14px;
+    background-repeat: no-repeat;
+}
+
+.comment_delete_text {
+    font-size: 14px;
+    color: #666666;
+}
+
+.comment_reply_icon {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    /* background-image: url("../../default_files/forum/post_detail/comment-reply.png"); */
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+}
+
+.comment_reply_text {
+    font-size: 14px;
+    color: #666666;
+}
+
+.comment_like_icon {
+    display: inline-block;
+    height: 19px;
+    width: 17px;
+    /* background-image: url("../../default_files/forum/post_detail/comment-like.png"); */
+    background-size: 17px 19px;
+    background-repeat: no-repeat;
+}
+
+.comment_like_icon.liked {
+    /* background-image: url("../../default_files/forum/post_detail/comment-like-pressed.png"); */
+    background-size: 17px 19px;
+    background-repeat: no-repeat;
+}
+
+.subcomment_likes {
+    font-size: 14px;
+    color: #333333;
+}
+
+.subcomment_likes.liked {
+    color: #EF2A58;
+}
+
+.subcomment_reply_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 53px; */
+}
+
+.subcomment_like {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 53px;
+}
+
+.more_subcomments {
+    margin-top: 40px;
+}
+
+.more_subcomments a {
+    font-size: 16px;
+    color: #333333;
+    border-bottom: 1px solid #333333;
+}

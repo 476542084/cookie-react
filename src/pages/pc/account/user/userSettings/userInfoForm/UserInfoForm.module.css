@@ -1,0 +1,112 @@
+form {
+    width: 100%;
+}
+
+select {
+    display: none;
+}
+
+.profile_img_row,
+.username_row,
+.user_gender_row,
+.user_location_row,
+.birthday_row {
+    display: flex;
+    align-items: center;
+    margin-left: 133px;
+    margin-bottom: 40px;
+}
+
+.user_info_title {
+    margin-right: 42px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.user_profile_pic {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-right: 26px;
+}
+
+.id_profile_pic {
+    display: none;
+}
+
+.change_profile_pic {
+    cursor: pointer;
+    padding: 3px 7px;
+    color: #333333;
+    background: #FFFFFF;
+    border: 1px solid #333333;
+    border-radius: 2px;
+}
+
+.username {
+    color: #333333;
+    font-size: 20px;
+}
+
+.user_radio_label {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-right: 19px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.user_radio_label:hover {
+    height: 24px;
+    width: 24px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.user_radio_label.chosen {
+    height: 24px;
+    width: 24px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.user_gender {
+    font-size: 20px;
+    color: #333333;
+    margin-right: 19px;
+}
+
+.bio_row {
+    display: flex;
+    margin-left: 133px;
+    margin-bottom: 30px;
+}
+
+.id_bio {
+    width: 458px;
+    height: 106px;
+    padding: 6px 10px;
+    border-radius: 2px;
+    border: 1px solid #999999;
+}
+
+.id_bio:focus {
+    border: 1px solid #999999;
+}
+
+.id_bio::placeholder {
+    font-size: 14px;
+    color: #999999;
+}
+
+.save_info {
+    margin-left: 204px;
+    margin-bottom: 40px;
+    width: 90px;
+    height: 40px;
+    background: #000000;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 2px;
+}

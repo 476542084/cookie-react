@@ -1,0 +1,64 @@
+.post_text {
+    padding: 60px 73px 70px;
+}
+
+.detail_post_text {
+    display: block;
+    margin: auto;
+    max-width: 680px;
+    font-size: 18px;
+    word-wrap: break-word;
+    margin-bottom: 70px;
+}
+
+.detail_post_text a{
+    text-decoration: none ;
+    color: #3d7e9a ;
+}
+.detail_post_text img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    object-fit: cover;
+    /* max-height: 100vh; */
+}
+.detail_post_text li{
+    list-style: unset;
+    list-style-position: inside;
+}
+.medium_insert_images figure {
+    margin: 0;
+}
+
+.post_likes_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.post_like_icon_large {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+    background: url("../../../../../../assets/forum/like-button-pressed.png");
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+}
+
+.post_like_icon_large_empty {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+    background: url("../../../../../../assets/forum/like-button.png");
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+}
+
+.post_likes_amount {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #333333;
+}

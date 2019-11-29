@@ -1,0 +1,358 @@
+input::-webkit-input-placeholder {
+    color: rgba(153,153,153,1);
+}
+
+.default-login-container {
+    font-size: 1.625rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+        flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    width: -webkit-fill-available;
+    margin: 1.25rem auto;
+    min-height: 25rem;
+}
+
+.default-login-container-left {
+    width: -webkit-fill-available;
+    margin: .9375rem;
+
+    border: 1px solid rgba(229,230,231,1);
+}
+
+.default-login-container-left-detail {
+    text-align: center;
+}
+
+.title {
+    font-size: 1.875rem;
+
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+
+    color: #333;
+}
+
+.default-login-container-left-detail-content {
+    padding: .625rem .9375rem;
+}
+
+.default-login-container-right {
+    margin-top: 1.25rem;
+
+    text-align: center;
+}
+
+.default-login-container-right img {
+    width: 85%;
+    margin: 0;
+}
+
+.login-account,.login-account-error{
+    position: relative;
+
+    margin-bottom: 4rem;
+}
+
+.account-icon {
+    position: relative;
+}
+
+.account-icon::before {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: .8125rem;
+
+    width: 1.6rem;
+    height: 1.875rem;
+
+    content: '';
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+
+    background: url(../../../../assets/account/login/user.png) no-repeat;
+    background-size: 1.6rem 1.875rem;
+}
+
+.password-icon {
+    position: relative; 
+}
+
+.password-icon::before {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: .8125rem;
+
+    width: 1.375rem;
+    height: 1.875rem;
+
+    content: '';
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+
+    background: url(../../../../assets/account/login/password.png) no-repeat;
+    background-size: 1.375rem 1.875rem;
+}
+
+.phone-icon {
+    display: flex;
+    position: relative;
+}
+.phone-icon>select{
+    direction: rtl;
+    margin-right: 0.625rem;
+    font-size: 1.625rem;
+}
+
+.phone-icon::before {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: .8125rem;
+
+    width: 1.375rem;
+    height: 1.875rem;
+
+    content: '';
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+
+    background: url(../../../../assets/account/login/mobile.png) no-repeat;
+    background-size: 1.375rem 1.875rem;
+}
+
+.identifying-icon {
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.identifying-icon::before {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: .8125rem;
+
+    width: 1.375rem;
+    height: 1.875rem;
+
+    content: '';
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+
+    background: url(../../../../assets/account/login/identifying.png) no-repeat;
+    background-size: 1.375rem 1.875rem;
+}
+
+.login-account::after,.login-password::after ,.login-phone::after,.login-identifying-code::after {
+    position: absolute;
+    bottom: -0.625rem;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    content: '';
+
+    background-color: #e5e6e7;
+}
+
+.login-account-error::after,.login-password-error::after ,.login-phone-error::after,.login-identifying-code-error::after {
+    position: absolute;
+    bottom: -0.625rem;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    content: '';
+
+    background-color: red;
+}
+
+.account-input {
+    width: calc(100% - 1.875rem);
+    margin-left: 2rem;
+    font-size: 1.625rem;
+
+    color:rgba(51,51,51,1) !important;
+}
+
+.phone-input {
+    width: calc(100% - 1.875rem);
+    margin-left: 2rem;
+    font-size: 1.625rem;
+
+    color:rgba(51,51,51,1) !important;
+}
+
+.identifying-code-input {
+
+    margin-top: 2px;
+    margin-left: 2rem;
+
+    width: 35%;
+    font-size: 1.625rem;
+
+    color: rgba(153,153,153,1);
+}
+
+.identifying-code-input::placeholder {
+    font-size: 1.625rem;
+}
+
+.get_identifying_code {
+    float: right;
+    margin-right: .625rem;
+    font-size: 1.625rem;
+    cursor: pointer;
+}
+
+.count_time {
+    float: right;
+
+    margin-right: .625rem;
+}
+
+.login-password,.login-password-error {
+    position: relative;
+}
+
+#login_container{
+    width: auto;
+    height: 25rem;
+}
+#login_container>iframe{
+    height: 100%;
+}
+.login-phone,.login-phone-error {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.login-identifying-code,.login-identifying-code-error {
+    position: relative;
+}
+
+
+.password-input {
+    width: calc(100% - 1.875rem);
+    margin-left: 2rem;
+    font-size: 1.625rem;
+
+    color:rgba(51,51,51,1) !important;
+}
+
+.login-other {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 1.625rem;
+    margin: 0 .625rem;
+    margin-top: 3rem;
+}
+
+.login-other a {
+    color: #333;
+}
+
+.login-other p {
+    cursor: pointer;
+}
+
+.login-enter {
+    font-size: 1.875rem;
+    padding: .625rem 0;
+    width: 100%;
+    margin: 1.25rem 0;
+
+    cursor: pointer;
+
+    color: #e5e6e7;
+    border-radius: 2px;
+    background: rgba(51,51,51,1);
+}
+
+.other-login-method {
+    position: relative;
+}
+
+.other-login-method::before {
+    position: absolute;
+    top: 50%;
+    left: -75%;
+
+    width: 3.75rem;
+    height: 1px;
+
+    content: '';
+
+    background-color: #e5e6e7;
+}
+
+.other-login-method::after {
+    position: absolute;
+    top: 50%;
+    right: -75%;
+
+    width: 3.75rem;
+    height: 1px;
+
+    content: '';
+
+    background-color: #e5e6e7;
+}
+
+.login-bottom {
+    margin-bottom: 1.25rem;
+    margin-top: 6.25rem;
+}
+
+.login-bottom-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    width: 25%;
+    margin: .9375rem auto;
+}
+
+.login-bottom-icon img {
+    height: 1.875rem;
+    cursor: pointer;
+}
+
+.error{
+    position: absolute;
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: .5rem;
+    font-size: 1.5rem;
+    color: #ef2a58;
+}
+
+
+

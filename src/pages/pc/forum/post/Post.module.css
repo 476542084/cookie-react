@@ -1,0 +1,128 @@
+.post_container {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    page-break-before: avoid;
+    margin-bottom: 20px;
+    overflow: visible;
+    border: 4px solid transparent;
+    border-radius: 2px;
+}
+
+.post_container.safari {
+    display: inline-block;
+}
+
+.post_container.empty {
+    visibility: hidden;
+}
+
+.post_holder {
+    box-shadow: 0px 2px 4px 0px rgba(14,14,87,0.1);
+    border-radius: 2px;
+    position: relative;
+}
+
+.post_holder > a {
+    width: 100%;
+}
+.stick_top{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #FFFFFF;
+    background-color: #333333;
+    padding: 3px 10px;
+    border-radius:2px 0px 0px 0px;
+}
+.post_img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 300px;
+    border-radius: 2px 2px 0px 0px;
+    object-fit: cover;
+}
+
+.post_details {
+    width: 100%;
+    padding: 18px 15px 20px;
+    border-bottom: 1px solid #E5E6E7;
+}
+
+.post_title {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.post_text {
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 20px;
+    max-width: 100%;
+    min-height: 50px;
+    word-break: break-all;
+}
+
+.post_info_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment_likes_row,
+.post_likes,
+.post_comments {
+    display: flex;
+    align-items: center;
+}
+
+.post_likes,
+.post_comments {
+    margin-right: 17px;
+    font-size: 12px;
+    color: #BCC1C5;
+}
+
+.post_likes_icon,
+.post_comments_icon {
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+}
+
+.post_topic {
+    font-size: 12px;
+    color: #BCC1C5;
+}
+
+.post_author_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0 0 5px;
+}
+
+.post_author_holder {
+    display: flex;
+    align-items: center;
+}
+
+.post_author_img {
+    flex-shrink: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px 0 rgba(14,14,87,0.2);
+}
+
+.post_author_username {
+    flex-shrink: 0;
+    font-size: 12px;
+    color: #333333;
+    margin-left: 8px;
+}
+
+.post_created_time {
+    font-size: 12px;
+    color: #999999;
+}

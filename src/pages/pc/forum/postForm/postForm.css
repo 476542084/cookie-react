@@ -1,0 +1,27 @@
+.w-e-toolbar {
+    border: 1px solid rgba(229,230,231,1) !important;
+    border-bottom: 0 !important;
+    background: rgba(250,251,252,1) !important;
+}
+
+.w-e-text-container {
+    min-height: 500px;
+
+    border: 1px solid rgba(229,230,231,1) !important;
+    border-top: unset !important;
+}
+
+.w-e-text {
+    overflow-y: auto !important;
+}
+
+.w-e-text img {
+    max-width: 300px !important;
+}
+.w-e-text p{
+    margin: 0 !important;
+}
+.w-e-text li{
+    list-style: unset !important;
+    list-style-position: inside;
+}

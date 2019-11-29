@@ -1,0 +1,37 @@
+.subcomment_form_container {
+    width: calc(100% - 73px);
+    padding-top: 20px;
+    margin-left: 73px;
+    background: #F7F7F7;
+}
+
+.subcomment_form {
+    display: flex;
+    align-items: center;
+    padding: 0px 40px 20px 60px;
+    width: 100%;
+}
+
+.subcomment_text_comment {
+    width: calc(100% - 151px);
+    font-size: 18px;
+    color: #333333;
+    margin-right: 39px;
+    padding: 15px 20px;
+    border: none;
+}
+
+.subcomment_text_comment::placeholder {
+    display: block;
+    font-size: 18px;
+    color: #999999;
+}
+
+.comment_submit {
+    width: 112px;
+    height: 54px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background: #333333;
+    border-radius: 2px;
+}

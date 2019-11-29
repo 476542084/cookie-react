@@ -1,0 +1,63 @@
+.likes_container {
+    width: 100%;
+    padding: 10px;
+}
+
+.likes_container > a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.like_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 0px rgba(14,14,87,0.1);
+}
+
+.liked_content_holder {
+    margin-left: 22px;
+    padding: 20px;
+    width: 275px;
+    background: #F8F8F8;
+}
+
+.liked_content {
+    font-size: 14px;
+    color: #333333;
+}
+
+.info_holder {
+    width: 146px;
+    text-align: left;
+}
+
+.liked_time {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.comment_likes_row,
+.likes,
+.comments {
+    display: flex;
+    align-items: center;
+}
+
+.likes,
+.comments {
+    margin-right: 17px;
+    font-size: 12px;
+    color: #BCC1C5;
+}
+
+.likes_icon,
+.comments_icon {
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+}

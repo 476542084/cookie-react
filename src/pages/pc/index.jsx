@@ -1,43 +1,43 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { saveToken } from '@/store/forum/action'
-import PropTypes from 'prop-types'
-import {getUserInfo} from '@/api/getData'
+import IndexFeatured from './index/indexFeatured/IndexFeatured'
+import IndexTopics from './index/indexTopics/IndexTopics'
+import ForumHeader from './forum/forumHeader/ForumHeader'
+import { getTopicList } from '@/api/getData'
+
 class Index extends Component{
-    static propTypes = {
-        saveToken: PropTypes.func.isRequired,
-    }
-    state = {
-        data:[],
-        account:'',
-    }
+    constructor(props){
+        super(props)
 
-    getUserInfo = async() => {
-        try {
-            let data = await getUserInfo(this.state.account)
-            if(data.error_code === 0){
-                console.log('data',data)
-            }else{
-                alert(data.msg)
-            }
-        } catch (error) {
-            alert('错误')
+        this.state = {
+            topics: []
         }
-
     }
 
-    componentWillMount(){
-        this.getUserInfo()
+
+    componentDidMount = async () => {
+        try {
+            const data = await getTopicList()
+            if (data.status === 200) {
+                this.setState({topics: [...data]})
+            } else {
+                console.log(data.msg)
+            }
+        }
+        catch {
+            console.log('api data error')
+        }
     }
+
+
     render() {
         return(
             <main>
-                
+                <IndexFeatured />
+                <ForumHeader value='热门分类' />
+                <IndexTopics topics={this.state.topics} />
             </main>
         )
     }
 }
 
-export default connect(state => ({
-    proData: state.date,
-}), {saveToken})(Index);
+export default Index;

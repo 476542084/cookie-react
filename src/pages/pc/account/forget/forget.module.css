@@ -1,0 +1,259 @@
+.forgot-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -ms-flex-flow: column;
+        flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    width: 1200px;
+    min-height: 500px;
+    margin: 10px auto 60px;
+}
+
+.forgot-title {
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+.forgot-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -ms-flex-flow: column;
+        flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    width: 40%;
+}
+
+.forgot-content-item,.forgot-content-item-error {
+    position: relative;
+
+    width: 70%;
+    height: 40px;
+    margin-bottom: 45px;
+}
+
+.forgot-content-item::after{
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    content: '';
+
+    background-color: #e5e6e7;
+}
+.forgot-content-item-error:after{
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    content: '';
+
+    background-color:red;
+}
+
+.forgot-content-item select,.forgot-content-item-error select {
+    direction: rtl;
+    float: right;
+
+    padding-right: 10px;
+
+    color: #999;
+}
+
+.forgot-content-item p,.forgot-content-item-error p {
+    font-size: 14px;
+
+    margin-top: 15px;
+    margin-left: 8px;
+
+    color: #ef2a58;
+}
+
+.forgot-input {
+    font-size: 14px;
+
+    position: relative;
+
+    width: 100%;
+
+    color: #999;
+    background-repeat: no-repeat;
+    background-position: 8px;
+    background-size: 13px 15px;
+}
+
+.forgot-input input {
+    margin-left: 30px;
+}
+
+.count_time {
+    float: right;
+
+    margin-right: 10px;
+}
+
+.phone-input::before {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 10px;
+
+    width: 11px;
+    height: 15px;
+
+    content: '';
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+
+    background: url(../../../../assets/account/forgot/mobile.png) no-repeat;
+    background-size: 11px 15px;
+}
+
+.identifying-input::before {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 10px;
+
+    width: 11px;
+    height: 15px;
+
+    content: '';
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+
+    background: url(../../../../assets/account/forgot/identifying.png) no-repeat;
+    background-size: 11px 15px;
+}
+
+.password-input::before,
+.verify-input::before {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 13px;
+
+    width: 14px;
+    height: 15px;
+
+    content: '';
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+
+    background: url(../../../../assets/account/forgot/password_setting.png) no-repeat;
+    background-size: 14px 15px;
+}
+
+.account-input::before {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 13px;
+
+    width: 14px;
+    height: 15px;
+
+    content: '';
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+
+    background: url(../../../../assets/account/forgot/user.png) no-repeat;
+    background-size: 14px 15px;
+}
+
+.identifying-input + span {
+    font-size: 15px;
+
+    float: right;
+
+    padding-right: 10px;
+
+    cursor: pointer;
+
+    color: #ef2a58;
+}
+
+.get_identifying_code {
+    float: right;
+
+    margin-right: 10px;
+
+    cursor: pointer;
+}
+
+.forgot-content-item select {
+    float: right;
+
+    padding-right: 10px;
+
+    color: #999;
+}
+
+.forgot-artcle {
+    font-size: 14px;
+
+    width: 70%;
+
+    text-align: right;
+}
+
+.forgot-artcle a {
+    color: #ef2a58;
+}
+
+.forgot-bottom {
+    width: 70%;
+
+    text-align: center;
+}
+
+.forgot-bottom input {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px 0;
+
+    cursor: pointer;
+}
+
+.forgot-submit {
+    color: #e5e6e7;
+    border-radius: 2px;
+    background: rgba(51,51,51,1);
+}
+
+.back-button {
+    border: .5px solid rgba(51,51,51,1);
+    border-radius: 2px;
+}
+
+.back-button:focus {
+    border: .5px solid rgba(51,51,51,1);
+}
+
+.error{
+    position: absolute;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    color: #ef2a58;
+}

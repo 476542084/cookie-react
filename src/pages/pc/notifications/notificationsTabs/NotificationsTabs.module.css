@@ -1,0 +1,25 @@
+.sidebar_container {
+    flex-shrink: 0;
+    align-self: flex-start;
+    width: 366px;
+    margin-left: 10px;
+    background: #FFFFFF;
+    box-shadow:0px 0px 10px 0px rgba(14,14,87,0.1);
+}
+
+.sidebar_header_container {
+    display: block;
+    padding: 23px 0;
+    text-align: center;
+}
+
+.sidebar_header {
+    color: #333333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}

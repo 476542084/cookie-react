@@ -1,0 +1,40 @@
+.sidebar_item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 23px 40px;
+  }
+  
+  .sidebar_item:hover {
+    background: #F5F6F7;
+  }
+  
+  .sidebar_item.active {
+    background: #F5F6F7;
+  }
+  
+  .new_notification {
+    display: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    left: 15px;
+    object-fit: contain;
+  }
+  
+  .new_notification.new {
+    display: block;
+  }
+  
+  .sidebar_title {
+    color: #333333;
+    font-size: 18px;
+  }
+  
+  .time_since {
+    display: none;
+    color: #999999;
+    font-size: 14px;
+  }

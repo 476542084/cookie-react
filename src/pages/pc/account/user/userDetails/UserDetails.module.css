@@ -1,0 +1,108 @@
+.user_info_sidebar {
+    flex-shrink: 0;
+    align-self: flex-start;
+    width: 366px;
+}
+
+.user_info {
+    width: 100%;
+    padding: 0.1px;
+    background: #FFFFFF;
+    box-shadow:0px 0px 10px 0px rgba(14,14,87,0.1);
+}
+
+.user_info_holder {
+    padding: 0.1px;
+}
+
+.username_holder {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: calc(100% - 132px);
+    margin: 10px auto 40px;
+}
+
+.username {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.user_badges {
+    display: flex;
+    position: absolute;
+    left: 100%;
+}
+
+.user_badge {
+    display: block;
+    height: 23px;
+    width: 23px;
+    margin-left: 10px;
+    object-fit: cover;
+}
+
+.user_img {
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin: 40px auto 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user_follow_info {
+    margin: 0 40px 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user_follow_info > a {
+    cursor: pointer;
+}
+
+.user_info_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_info_item.active > p {
+    color: #EF2A58;
+}
+
+.user_info_item_count {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 4px;
+}
+
+.user_info_item_text {
+    font-size: 14px;
+    color: #666666;
+}
+
+.user_info_holder > a {
+    display: block;
+    margin-bottom: 31px;
+}
+
+.user_info_settings {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 286px;
+    height: 40px;
+    color: #FFFFFF;
+    background: #333333;
+    font-size: 14px;
+    border-radius: 2px;
+}

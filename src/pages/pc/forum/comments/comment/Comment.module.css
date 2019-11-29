@@ -1,0 +1,185 @@
+.comment_item {
+    padding: 60px 33px 40px 54px;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    border-bottom: 1px solid #E5E6E7;
+    background: #FFFFFF;
+}
+
+.comment_item:last-child {
+    border-bottom: none;
+}
+
+.comment_body {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding-right: 41px;
+    margin-bottom: 35px;
+}
+
+.comment_profile_img_holder {
+    align-self: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    margin-right: 13px;
+}
+
+.profile_img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile_verif_img {
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+
+.comment_contents {
+    width: calc(100% - 73px);
+}
+
+.comment_author {
+    font-size: 16px;
+    color: #333333;
+}
+
+.comment_time {
+    display: block;
+    font-size: 16px;
+    color: #999999;
+    margin: 8px auto 17px;
+}
+
+.comment_text {
+    display: block;
+    font-size: 14px;
+    color: #333333;
+}
+
+.comment_image_holder {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.comment_image {
+    height: 120px;
+    width: 120px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.comment_image:last-child {
+    margin-right: 0;
+}
+
+.comment_reply_login {
+    margin-top: 17px;
+}
+
+.subcomment_button {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    font-size: 14px;
+    line-height: 15px;
+    color: #666666;
+}
+
+.subcomment_button_fake {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    font-size: 14px;
+    line-height: 15px;
+    color: #666666;
+}
+
+.comment_reply_icon {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    /* background-image: url("../../default_files/forum/post_detail/comment-reply.png"); */
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+}
+
+.comment_subcomments {
+    margin-right: 10px;
+}
+
+.remove_comment {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 41px;
+    top: 0;
+}
+
+.comment_delete_icon {
+    display: inline-block;
+    height: 14px;
+    width: 15px;
+    margin-right: 9px;
+    /* background-image: url("../../default_files/forum/delete.png"); */
+    background-size: 15px 14px;
+    background-repeat: no-repeat;
+}
+
+.comment_delete_text {
+    font-size: 14px;
+    color: #666666;
+}
+
+.comment_like,
+.comment_like_login {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 53px;
+    right: 41px;
+    top: 32px;
+}
+
+.comment_like_fake {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 53px;
+}
+
+.comment_like_icon {
+    display: inline-block;
+    height: 19px;
+    width: 17px;
+    /* background-image: url("../../default_files/forum/post_detail/comment-like.png"); */
+    background-size: 17px 19px;
+    background-repeat: no-repeat;
+}
+
+.comment_like_icon.liked {
+    /* background-image: url("../../default_files/forum/post_detail/comment-like-pressed.png"); */
+    background-size: 17px 19px;
+    background-repeat: no-repeat;
+}
+
+.comment_like_amount {
+    font-size: 14px;
+    color: #333333;
+}
+
+.comment_like_amount.liked {
+    color: #EF2A58;
+}

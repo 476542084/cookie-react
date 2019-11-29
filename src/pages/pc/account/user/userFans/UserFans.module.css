@@ -1,0 +1,7 @@
+.user_fan_container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}

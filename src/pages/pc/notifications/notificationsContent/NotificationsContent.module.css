@@ -1,0 +1,32 @@
+.notifications_content {
+    flex-shrink: 0;
+    padding: 20px 90px 30px 98px;
+    width: calc(100% - 366px);
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
+    background: #F7F9FA;
+}
+
+.notifications_content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.notifications_content::-webkit-scrollbar-track {
+    display: none;
+}
+
+.notifications_content::-webkit-scrollbar-thumb {
+    background: #D8D8D8;
+    width: 8px;
+    border-radius: 4px;
+}
+
+.notifications_content::-webkit-scrollbar-track:hover {
+    display: none;
+}
+
+.notifications_content::-webkit-scrollbar-thumb:hover {
+    background: #D8D8D8;
+    width: 8px;
+    border-radius: 4px;
+}

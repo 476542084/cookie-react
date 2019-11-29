@@ -4,7 +4,7 @@ import * as products from './products/reducer'
 import thunk from 'redux-thunk'
 
 let store = createStore(
-    combineReducers({...forum},{...products}),
+    combineReducers({...forum}, {...products}),
     applyMiddleware(thunk)
 )
 

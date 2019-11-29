@@ -1,0 +1,99 @@
+.user_holder {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* height: calc(90px - 40px); */
+    margin-bottom: 20px;
+    padding: 20px 10px 10px;
+    background: #FFFFFF;
+}
+
+.user_img_holder {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.user_img_holder > a {
+    height: 100%;
+    width: 100%;
+}
+
+.user_img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.fans_profile_verif_pic {
+    object-fit: cover;
+    position: absolute;
+    border-radius: 50%;
+    height: 30%;
+    width: 30%;
+    right: 0;
+    bottom: 0;
+}
+
+.user_details {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 60px);
+}
+
+.user_info {
+    width: calc(100% - 90px);
+    margin-right: 10px;
+    text-align: left;
+}
+
+.username {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.follow_text {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 14px;
+}
+
+.user_time {
+    color: #999999;
+    font-size: 12px;
+}
+
+.user_follow_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 70px;
+    color: #FFFFFF;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.user_follow_button.non_followed {
+    color: #FFFFFF;
+    background: #EF2A58;
+}
+
+.user_follow_button.followback {
+    color: #FFFFFF;
+    background: #EF2A58;
+}
+
+.user_follow_button.mutual {
+    color: #666666;
+    background: none;
+}
+
+.user_follow_button.followed {
+    color: #333333;
+    background: #FFFFFF;
+    border: 1px solid #333333;
+}

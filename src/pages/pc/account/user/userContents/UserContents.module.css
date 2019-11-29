@@ -1,0 +1,39 @@
+.hide_scrollbar::-webkit-scrollbar-thumb {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.user_info_contents {
+    flex-shrink: 0;
+    width: calc(100% - 386px);
+    margin-right: 12px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    overscroll-behavior: none;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.user_info_contents::-webkit-scrollbar {
+    width: 8px;
+}
+
+.user_info_contents::-webkit-scrollbar-track {
+    display: none;
+}
+
+.user_info_contents::-webkit-scrollbar-thumb {
+    background: #D8D8D8;
+    width: 8px;
+    border-radius: 4px;
+}
+
+.user_info_contents::-webkit-scrollbar-track:hover {
+    display: none;
+}
+
+.user_info_contents::-webkit-scrollbar-thumb:hover {
+    background: #D8D8D8;
+    width: 8px;
+    border-radius: 4px;
+}

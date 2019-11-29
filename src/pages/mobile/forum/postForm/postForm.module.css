@@ -1,0 +1,283 @@
+.container {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.popup-container {
+    z-index: 999999;
+}
+
+.popup-holder-downloadImg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    width: 30%;
+    height: 30%;
+
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-animation: appear .5s linear 1 ;
+            animation: appear .5s linear 1 ;
+    text-align: center;
+
+    border-radius: 2px;
+    background-color: white;
+}
+
+.popup-holder-downloadImg img {
+    -webkit-animation: loading 1s infinite linear;
+            animation: loading 1s infinite linear;/***一秒循环执行**/
+}
+
+@-webkit-keyframes loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@keyframes loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes appear {
+    0% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#editor {
+    z-index: 10000 !important;
+
+    width: 100%;
+}
+
+.editor-left {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+.editor-left .top {
+    min-height: 120px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 45px 0 0 0;
+
+    background: rgba(255,255,255,1);
+}
+
+.editor-left input {
+    font-size: 1.875rem;
+}
+
+.editor-left input::-webkit-input-placeholder {
+    color: rgba(153,153,153,1);
+}
+
+.covers label {
+    text-align: center;
+}
+
+.editor-left .covers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 130px;
+    margin-top: auto;
+
+    cursor: pointer;
+
+    color: rgba(102,102,102,1);
+    background: rgba(250,251,252,1);
+}
+.editor-left .top select {
+    width: calc(100vw - 1rem);
+    height: 30px;
+    margin-bottom: 15px;
+
+    text-indent: 5px;
+
+    border: 1px solid rgba(229,230,231,1);
+    border-radius: 2px;
+
+
+    font-size: 1.5rem;
+
+    margin-top: 20px;
+
+    text-indent: unset;
+    padding: 0 30px;
+    color: #999;
+    border: unset;
+}
+
+.editor-left .covers img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    max-width: 60%;
+}
+
+.editor-left .covers span {
+    position: relative;
+    font-size: 1.5rem;
+}
+
+
+
+.editor-left .bottom {
+    min-height: 0;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 0;
+    background: rgba(250,251,252,1);
+}
+
+.default {
+    line-height: 19px;
+
+    margin-top: 16px;
+
+    color: #666;
+}
+.error{
+    line-height: 19px;
+
+    margin-top: 16px;
+    color:red;
+}
+.default span,.error span {
+    display: inline-block;
+
+    width: 6px;
+    height: 6px;
+    margin-right: 5px;
+
+    vertical-align: middle;
+
+    border-radius: 50%;
+    background-color: #666;
+}
+.error span{
+    background-color:red;
+}
+.select {
+    position: relative;
+}
+
+
+.select::before {
+    position: absolute;
+    top: 55%;
+    right: 20px;
+
+    display: block;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+
+    border: 5px solid;
+    border-color: #666 transparent transparent;
+}
+
+.select::after {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 1px;
+
+    content: '';
+
+    background-color: #e5e6e7;
+}
+
+#id_title {
+    width: calc(100% - 60px);
+    padding: 0 30px;
+}
+
+.title {
+    position: relative;
+}
+
+.title::after {
+    position: absolute;
+    bottom: -10px;
+
+    display: block;
+
+    width: 100%;
+    height: 1px;
+
+    content: '';
+
+    background-color: #e5e6e7;
+}
+
+#id_cover_image {
+    display: none;
+}
+
+#id_content {
+    display: none;
+}
+
+#editor a {
+    text-decoration: none ;
+
+    color: #3d7e9a ;
+}

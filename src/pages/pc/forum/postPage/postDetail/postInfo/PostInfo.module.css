@@ -1,0 +1,169 @@
+.post_header {
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(14,14,87,0.1);
+}
+
+.post_info {
+    width: calc(100% - 250px);
+    padding: 40px 40px 30px;
+}
+
+.post_title {
+    max-width: 100%;
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 22px;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: space-between;
+}
+
+.share_post_detail{
+    font-size: 14px;
+    display: contents;
+    cursor: pointer;
+}
+
+.post_topic_row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.post_topic_row > span:first-child {
+    font-size: 14px;
+    color: #666666;
+    margin-right: 40px;
+}
+
+.post_topic {
+    color: #333333;
+    border-bottom: 1px solid #333333;
+}
+
+.post_created_time {
+    display: block;
+    color: #999999;
+    font-size: 14px;
+}
+
+.post_likes_row {
+    display: flex;
+    align-items: center;
+}
+
+.post_likes {
+    display: flex;
+    align-items: center;
+    width: 53px;
+    margin-right: 60px;
+}
+
+.post_like_icon {
+    display: inline-block;
+    height: 17px;
+    width: 16px;
+    margin-right: 10px;
+    /* background: url("../../default_files/forum/like.png"); */
+    background-size: 16px 17px;
+    background-repeat: no-repeat;
+}
+
+.num_likes {
+    font-size: 14px;
+    color: #BCC1C5;
+}
+
+.post_comments {
+    display: flex;
+    align-items: center;
+}
+
+.post_comment_icon {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    /* background: url("../../default_files/forum/comment.png"); */
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+}
+
+.num_comments {
+    font-size: 14px;
+    color: #BCC1C5;
+}
+
+.post_author {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0px 0px 10px 0px rgba(14,14,87,0.1);
+}
+
+.author_img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.author_info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 10px auto 18px;
+}
+
+.author_username {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.author_badge {
+    position: absolute;
+    height: 19px;
+    width: 19px;
+    right: -29px;
+    object-fit: cover;
+}
+
+.post_delete_icon {
+    height: 19px;
+    width: 19px;
+}
+
+.author_follow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    color: #FFFFFF;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.author_follow.non_followed {
+    color: #FFFFFF;
+    background: #EF2A58;
+}
+
+.author_follow.followback {
+    color: #FFFFFF;
+    background: #EF2A58;
+}
+
+.author_follow.mutual {
+    color: #333333;
+    background: none;
+}
+
+.author_follow.followed {
+    color: #333333;
+    background: #FFFFFF;
+    border: 1px solid #333333;
+}

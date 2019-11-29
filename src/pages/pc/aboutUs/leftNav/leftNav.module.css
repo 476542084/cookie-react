@@ -1,0 +1,41 @@
+.col{
+    height: 100%;
+    padding-top: 30px;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.stick-top{
+    position: fixed;
+    top: 183px;
+    z-index: 90;
+}
+.about-us-nav{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-direction: column;
+    padding-left: 5px;
+}
+.about-us-nav li{
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #888;
+}
+
+.default{
+    color: #888;
+}
+.active{
+    color: #323232;
+}

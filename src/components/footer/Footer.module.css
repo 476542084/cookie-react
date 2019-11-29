@@ -1,0 +1,162 @@
+.footer-container {
+    width: 100%;
+    min-height: 200px;
+
+    text-align: center;
+}
+.footer-container a {
+    font-size: 16px;
+
+    color: #999;
+}
+
+.footer-container a:link {
+    text-decoration: none;
+
+    color: #999;
+    /* 指正常的未被访问过的链接*/
+}
+
+.footer-container a:visited {
+    text-decoration: none;
+    /*指已经访问过的链接*/
+}
+
+.footer-container a:hover {
+    text-decoration: none;
+
+    color: #999;
+    /*指鼠标在链接*/
+}
+
+.footer-container a:active {
+    text-decoration: none;
+
+    color: #999;
+    /* 指正在点的链接*/
+}
+
+.footer-links-container {
+    padding-top: 20px;
+}
+
+.footer-link {
+    margin: 0 30px;
+}
+
+.footer-socials {
+    padding-top: 30px;
+}
+
+.footer-socials a {
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.Weibo > img {
+    height: 24px;
+    width: 30px;
+}
+
+.Bilibili > img {
+    height: 24px;
+    width: 27px;
+}
+
+.Wechat > img {
+    height: 24px;
+    width: 30px;
+}
+
+.Instagram > img {
+    height: 24px;
+    width: 23px;
+}
+
+.footer-copyright {
+    margin-top: 25px;
+
+    color: #999;
+}
+
+
+.container-fluid {
+    margin-top: 15px;
+}
+
+.icp-number {
+    margin-top: 15px;
+}
+
+.license {
+    display: inline-block;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    vertical-align: middle;
+}
+
+.license img {
+    vertical-align: middle;
+}
+
+.license span {
+    vertical-align: middle;
+}
+
+@media(max-width:1024px) {
+    .footer-links-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .footer-container a{
+        font-size: 1.5rem;
+    }
+    .footer-links {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .footer-link {
+        font-size: 1rem;
+
+        margin: 0;
+    }
+    .footer-copyright {
+        font-size: 1.375rem;
+    }
+
+    .footer-socials a {
+        margin: 0 20px;
+    }
+
+    .Weibo > img {
+        height: 1.5rem;
+        width: 1.875rem;
+    }
+    
+    .Bilibili > img {
+        height: 1.5rem;
+        width: 1.6875rem;
+    }
+    
+    .Wechat > img {
+        height: 1.5rem;
+        width: 1.875rem;
+    }
+    
+    .Instagram > img {
+        height: 1.5rem;
+        width: 1.4375rem;
+    }
+}

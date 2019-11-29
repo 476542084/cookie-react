@@ -1,0 +1,47 @@
+.user_location1_holder {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+}
+
+.user_location1_open {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 0 10px;
+    background: rgba(255,255,255,1);
+    border-radius: 2px;
+    border: 1px solid rgba(229,230,231,1);
+    height: 38px;
+    width: 168px;
+}
+
+.user_location1_dropdown {
+    position: absolute;
+    max-height: 280px;
+    width: 168px;
+    top: 37px;
+    z-index: 5;
+    overflow-y: auto;
+    background: rgba(255,255,255,1);
+    border-radius: 0 0 2px 2px;
+    border: 1px solid rgba(229,230,231,1);
+    border-top: 1px solid #333333;
+}
+
+.user_location1_dropdown_option {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    width: calc(100% - 10px);
+    padding-left: 10px;
+    background: #FFFFFF;
+}
+
+.dropdown_arrow {
+    height: 6px;
+    width: 10px;
+    background-size: 10px 6px;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,9 @@
+.posts_container {
+    width: 1260px;
+    margin: 2.8vh auto;
+    text-align: left;
+    column-count: 4;
+    column-gap: 20px;
+    overflow: visible;
+    height: fit-content;
+}

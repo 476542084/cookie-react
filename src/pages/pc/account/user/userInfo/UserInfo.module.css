@@ -1,0 +1,7 @@
+.user_info_container {
+    position: relative;
+    min-width: 1250px;
+    width: calc(100% - 300px);
+    margin: 20px auto 36px;
+    display: flex;
+}

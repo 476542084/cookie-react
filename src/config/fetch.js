@@ -1,8 +1,7 @@
-import {
-	baseUrl
-} from './envConfig'
+import {baseUrl} from './envConfig'
+import store from '@/store/store'
 
-export default async(url = '', data = {}, type = 'GET', method = 'fetch') => {
+export default async(url = '', data = {}, type = 'GET', upload = false, method = 'fetch') => {
 	type = type.toUpperCase();
 	url = baseUrl + url;
 
@@ -24,23 +23,38 @@ export default async(url = '', data = {}, type = 'GET', method = 'fetch') => {
 			method: type,
 			headers: {
 				'Accept': 'application/json',
-				'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization':'JWT '+ store.getState('forum').forumData.token
 			},
 			mode: "cors",
-			cache: "force-cache"
-		}
+			cache: "no-cache"
+        }
 
-		if (type === 'POST') {
-			Object.defineProperty(requestConfig, 'body', {
-				value: JSON.stringify(data)
-			})
-		}
+		if (type === 'POST' || type === 'PUT') {
+            if (!upload) {
+                Object.defineProperty(requestConfig, 'body', {
+                    value: JSON.stringify(data)
+                })
+            } else {
+                requestConfig = {
+                    ...requestConfig,
+                    headers: {
+                        'Accept': 'application/json',
+                        'Authorization':'JWT '+ store.getState('forum').forumData.token,
+                    },
+                    body: data,
+                }
+            }
+        }
 		
 		try {
-			const response = await fetch(url, requestConfig);
-			const responseJson = await response.json();
-			return responseJson
+            const response = await fetch(url, requestConfig)
+            const responseJson = await response.json()
+            responseJson['status'] = parseInt(response.status)
+            return responseJson
 		} catch (error) {
+            //未知错误
+            alert('系统错误，请稍后重试')
 			throw new Error(error)
 		}
 	} else {
@@ -57,7 +71,6 @@ export default async(url = '', data = {}, type = 'GET', method = 'fetch') => {
 			if (type === 'POST') {
 				sendData = JSON.stringify(data);
 			}
-
 			requestObj.open(type, url, true);
 			requestObj.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 			requestObj.send(sendData);
